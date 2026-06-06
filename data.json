@@ -1,0 +1,33 @@
+{
+  "categories": [
+    {
+      "name": "old cat",
+      "tasks": []
+    },
+    {
+      "name": "i wanna change",
+      "tasks": []
+    },
+    {
+      "name": "affirmations",
+      "tasks": []
+    },
+    {
+      "name": "new affirmations omg",
+      "tasks": []
+    },
+    {
+      "name": "yey",
+      "tasks": []
+    },
+    {
+      "name": "wodnderful",
+      "tasks": []
+    }
+  ],
+  "accent": "#ffffff",
+  "bg": "#110632",
+  "expanded": [
+    "affirmations"
+  ]
+}
