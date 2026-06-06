@@ -236,6 +236,11 @@ class CategoryWidget(QWidget):
             QPushButton:hover {{ background: #1a1a1a; }}
         """)
 
+    def update_count(self):
+        done  = sum(1 for t in self.cat["tasks"] if t["done"])
+        total = len(self.cat["tasks"])
+        self.header_btn.setText(f"  {self.cat['name']}   {done}/{total}")
+
     def toggle_expand(self):
         self.expanded = not self.expanded
         self.on_change(expand_toggle=True)
@@ -253,6 +258,8 @@ class CategoryWidget(QWidget):
                 item.widget().deleteLater()
             elif item.layout():
                 self._clear_layout(item.layout())
+
+        self.update_count()
 
         if not self.expanded:
             return
@@ -588,9 +595,13 @@ class NookWindow(QWidget):
             self.data["expanded"] = expanded
             datastore.save(self.data)
             for w in self.cat_widgets:
+                w.update_count()
+            for w in self.cat_widgets:
                 w.refresh_tasks()
         else:
             datastore.save(self.data)
+            for w in self.cat_widgets:
+                w.update_count()
 
     def save_and_render(self):
         datastore.save(self.data)
