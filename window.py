@@ -289,6 +289,11 @@ class CategoryWidget(QWidget):
                 font-size: 12px;
             }}
         """)
+        _p = self.task_input.palette()
+        _p.setColor(_p.ColorRole.PlaceholderText, QColor("#444444"))
+        self.task_input.setPalette(_p)
+
+
         self.task_input.returnPressed.connect(self.add_task)
         self.task_area.addWidget(self.task_input)
 
@@ -464,7 +469,6 @@ class NookWindow(QWidget):
 
         self.cat_input = QLineEdit()
         self.cat_input.setPlaceholderText("add category")
-        # color: #cccccc ensures typed text is clearly visible (not same as placeholder)
         self.cat_input.setStyleSheet(f"""
             QLineEdit {{
                 background: transparent;
@@ -476,6 +480,10 @@ class NookWindow(QWidget):
                 font-size: 12px;
             }}
         """)
+        _p = self.cat_input.palette()
+        _p.setColor(_p.ColorRole.PlaceholderText, QColor("#444444"))
+        self.cat_input.setPalette(_p)   
+
         self.cat_input.returnPressed.connect(self.add_category)
         top_bar.addWidget(self.cat_input)
 
@@ -577,6 +585,8 @@ class NookWindow(QWidget):
 
     def save_and_render(self):
         datastore.save(self.data)
+        if hasattr(self, 'cat_input'):
+            self.cat_input.clear()
         self.render_categories()
 
     def add_category(self):

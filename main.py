@@ -38,7 +38,7 @@ def main():
 
     # global hotkey in background thread
     def listen():
-        keyboard.add_hotkey("ctrl+alt+n", lambda: toggle(window))
+        keyboard.add_hotkey("ctrl+shift+space", lambda: toggle(window))
         keyboard.wait()
 
     t = threading.Thread(target=listen, daemon=True)

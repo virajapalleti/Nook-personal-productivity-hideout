@@ -1,27 +1,10 @@
 {
-  "categories": [
-    {
-      "name": "affirmations",
-      "tasks": []
-    },
-    {
-      "name": "new affirmations omg",
-      "tasks": []
-    },
-    {
-      "name": "yey",
-      "tasks": []
-    },
-    {
-      "name": "wodnderful",
-      "tasks": []
-    },
-    {
-      "name": "ok",
-      "tasks": []
-    }
-  ],
-  "accent": "#a78bfa",
+  "categories": [],
+  "accent": "#ff6b6b",
   "bg": "#0d1b2a",
-  "expanded": []
+  "expanded": [
+    "ojad",
+    "new one",
+    "new one"
+  ]
 }
