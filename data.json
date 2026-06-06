@@ -1,14 +1,6 @@
 {
   "categories": [
     {
-      "name": "old cat",
-      "tasks": []
-    },
-    {
-      "name": "i wanna change",
-      "tasks": []
-    },
-    {
       "name": "affirmations",
       "tasks": []
     },
@@ -23,11 +15,13 @@
     {
       "name": "wodnderful",
       "tasks": []
+    },
+    {
+      "name": "ok",
+      "tasks": []
     }
   ],
-  "accent": "#ffffff",
-  "bg": "#110632",
-  "expanded": [
-    "affirmations"
-  ]
+  "accent": "#a78bfa",
+  "bg": "#0d1b2a",
+  "expanded": []
 }
