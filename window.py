@@ -14,17 +14,26 @@ FONT = "Helvetica"
 # ── Colour presets — edit these yourself ────────────────────────────
 BG_PRESETS = [
     ("#0a0a0a", "Black"),
+    ("#8d99ae", "Light Grey"),
     ("#0d1b2a", "Navy"),
-    ("#1a0a2e", "Purple"),
-    ("#0a1f0a", "Green"),
-    ("#1f0a0a", "Red"),
+    ("#003049", "Navy02"),
+    ("#f7cad0", "Light Pink"),
+    ("#8364e8", "Purple"),
+    ("#a3b18a", "Sage Green"),
+    ("#3a5a40", "Dark Green"),
+    ("#caf0f8", "Light Blue"),
+    ("#1f0021", "Deep Wine"),
     ("#f0f0f0", "White"),
 ]
 
 ACCENT_PRESETS = [
-    ("#4EC9B0", "Teal"),
+    ("#34073d", "Deep purple"),
+    ("#0e1c26", "Black"),
+    ("#b7e4c7", "Light Green"),
+    ("#d9dace", "Pale White"),
     ("#ffffff", "White"),
     ("#ff6b6b", "Red"),
+    ("#e7bc91", "Light Brown"),
     ("#f0c040", "Gold"),
     ("#7ec8e3", "Sky"),
     ("#a78bfa", "Violet"),
